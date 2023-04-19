@@ -85,6 +85,7 @@ class Task extends StatelessWidget {
                             const Base64Decoder().convert(
                               task.image,
                             ),
+                            gaplessPlayback: true,
                           ),
                         ),
                       ),
