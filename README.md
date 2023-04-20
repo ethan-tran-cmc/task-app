@@ -4,12 +4,12 @@
 
 1. [Demo](#demo)
 2. [Environment](#environment)
-4. [Setup and Installation](#setup-and-installation)
-5. [Run project](#run-project)
-6. [Build app](#build-app)
-7. [Architecture of boilerplate](#architecture-of-boilerplate)
-8. [Folder structure](#folder-structure)
-9. [Use custom setting](#use-custom-setting)
+3. [Setup and Installation](#setup-and-installation)
+4. [Run project](#run-project)
+5. [Build app](#build-app)
+6. [Architecture of boilerplate](#architecture-of-boilerplate)
+7. [Folder structure](#folder-structure)
+8. [Screenshot](#screenshot)
 
 ## <a name="demo">#</a> Demo 🎬
 
@@ -80,8 +80,50 @@ https://user-images.githubusercontent.com/131247282/233044888-1a3496e9-30d5-421e
   - Domain ⇨ business logic(use cases) and business objects(entities) to modify or shape the data source
   - Presentation ⇨ How modified data source is shown to user
 <br/>
+## <a name="folder-structure">#</a> 🚪 Folder Structure
 
-## Screenshot
+Here is the core folder structure which flutter provides.
+
+```
+flutter-app/
+|- android
+|- build
+|- ios
+|- lib
+|- test
+```
+
+Here is the folder structure we have been using in this project
+
+```
+lib/
+|- data
+|- domain
+|- injectable
+|- environment
+|- l10n
+|- presentation
+|- router
+|- utilities
+|- main
+```
+
+Now, lets dive into the lib folder which has the main code for the application.
+
+```
+1- data - Local and / or Remote(API) data sources, raw model from data source, mapper(Map Entity objects to Models and vice-versa)
+2- domain - Business logic(use cases) and business objects(entities) to modify or shape the data source.
+3- injectable - Initialize the GetIt object and the dependency injection module.
+4- presentation - How modified data source is shown to user.
+5- router - Routes folder containing routes for the app.
+6- utilities - Folders manage constants, helpers, extensions,...
+7- main_common.dart - Method injection flavor for target file main_production.dart and main_staging.dart.
+8- main_production.dart - File run when run command build with -target or flavor production.
+9- main_staging.dart - File run when run command build with target -target or flavor staging.
+10- main_development.dart - File run when run command build with target -target or flavor development.
+```
+
+## <a name=#screenshot>#</a> Screenshot
 
 - **Home(task list)**
 ![simulator_screenshot_A831A715-7059-4D22-8DDE-72BF95F06D94](https://user-images.githubusercontent.com/131247282/233046920-398d9063-58de-4fe9-8cc8-a6d12c0bb385.png)
