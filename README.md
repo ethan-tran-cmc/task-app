@@ -140,3 +140,4 @@ Now, lets dive into the lib folder which has the main code for the application.
 
 ## <a name="distribute">#</a> Distribute
 ### Firebase distribute: [link](https://appdistribution.firebase.google.com/testerapps/1:162770905921:android:5d1556250bb10850518fc0/releases/6u9vu87dnhfoo?utm_source=firebase-console)
+![Screen Shot 2023-04-20 at 11 01 31](https://user-images.githubusercontent.com/131247282/233255041-2b44104e-f232-49fc-a9f6-8f47c2f9df7a.png)
