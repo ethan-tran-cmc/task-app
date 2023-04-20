@@ -7,6 +7,7 @@ import 'package:flutter_todo_app/domain/usecase/task/delete_task_usecase.dart';
 import 'package:flutter_todo_app/domain/usecase/task/get_list_task_usecase.dart';
 import 'package:flutter_todo_app/domain/usecase/task/update_task_usecase.dart';
 import 'package:flutter_todo_app/presentation/home/home_cubit.dart';
+import 'package:flutter_todo_app/presentation/home/home_state.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
@@ -91,6 +92,69 @@ void main() {
           );
         },
       );
+
+      test(
+        'Delete Task',
+        () async {
+          expect(
+            () async => await homeCubit.deleteTask(
+              taskEntities: TaskEntities(
+                id: '1',
+                title: 'Task title 1',
+                description: 'Task description 1',
+                createdAt: DateTime.now(),
+                image: 'Task image 1',
+                status: TaskStatus.inProgress,
+                userId: 'userId',
+              ),
+            ),
+            isA<void>(),
+          );
+        },
+      );
+
+      test(
+        'Search Task',
+        () async {
+          mockGetCurrentUser(getCurrentUserUseCase, user);
+          mockGetList(getListTaskUseCase);
+          await homeCubit.getData();
+          homeCubit.searchTask('Task title 1');
+          expect(
+            homeCubit.state.listTask.length,
+            1,
+          );
+        },
+      );
+
+      test(
+        'Sort Type',
+        () async {
+          mockGetCurrentUser(getCurrentUserUseCase, user);
+          mockGetList(getListTaskUseCase);
+          await homeCubit.getData();
+          homeCubit.sortBy(SortBy.date);
+          expect(
+            homeCubit.state.listTask.first.title,
+            'Task title 3',
+          );
+        },
+      );
+
+      test(
+        'Sort By',
+        () async {
+          mockGetCurrentUser(getCurrentUserUseCase, user);
+          mockGetList(getListTaskUseCase);
+          await homeCubit.getData();
+          homeCubit.sortBy(SortBy.date);
+          homeCubit.sortType(SortType.newest);
+          expect(
+            homeCubit.state.listTask.first.title,
+            'Task title 1',
+          );
+        },
+      );
     },
   );
 }
@@ -103,7 +167,7 @@ void mockGetList(MockGetListTaskUseCase getListTaskUseCase) async {
           id: '1',
           title: 'Task title 1',
           description: 'Task description 1',
-          createdAt: DateTime.now(),
+          createdAt: DateTime(2023, 1, 1),
           image: 'Task image 1',
           status: TaskStatus.inProgress,
           userId: 'userId',
@@ -112,7 +176,7 @@ void mockGetList(MockGetListTaskUseCase getListTaskUseCase) async {
           id: '2',
           title: 'Task title 2',
           description: 'Task description 2',
-          createdAt: DateTime.now(),
+          createdAt: DateTime(2023, 1, 2),
           image: 'Task image 2',
           status: TaskStatus.inProgress,
           userId: 'userId',
@@ -121,7 +185,7 @@ void mockGetList(MockGetListTaskUseCase getListTaskUseCase) async {
           id: '3',
           title: 'Task title 3',
           description: 'Task description 3',
-          createdAt: DateTime.now(),
+          createdAt: DateTime(2023, 1, 3),
           image: 'Task image 3',
           status: TaskStatus.inProgress,
           userId: 'userId',

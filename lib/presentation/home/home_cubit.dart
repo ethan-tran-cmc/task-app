@@ -98,7 +98,7 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  set sortBy(SortBy sortBy) {
+  void sortBy(SortBy sortBy) {
     final newList = state.sortTask(
         taskList: oldTaskList, sortBy: sortBy, sortType: state.sortType);
     emit(
@@ -109,7 +109,7 @@ class HomeCubit extends Cubit<HomeState> {
     );
   }
 
-  set sortType(SortType sortType) {
+  void sortType(SortType sortType) {
     SortType newSortType;
     if (sortType == SortType.newest) {
       newSortType = SortType.lowest;
@@ -117,7 +117,10 @@ class HomeCubit extends Cubit<HomeState> {
       newSortType = SortType.newest;
     }
     final newList = state.sortTask(
-        taskList: oldTaskList, sortBy: state.sortBy, sortType: newSortType);
+      taskList: oldTaskList,
+      sortBy: state.sortBy,
+      sortType: newSortType,
+    );
     emit(
       state.copyWith(
         sortType: newSortType,

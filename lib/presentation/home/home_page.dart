@@ -94,11 +94,11 @@ class _HomePageState extends State<HomePage> {
                   sortType: state.sortType,
                   onSortByTapCallBack: (value) {
                     _searchController.text = '';
-                    _bloc.sortBy = value;
+                    _bloc.sortBy(value);
                   },
                   onSortTypeTapCallBack: (value) {
                     _searchController.text = '';
-                    _bloc.sortType = value;
+                    _bloc.sortType(value);
                   },
                 ),
                 const SizedBox(
