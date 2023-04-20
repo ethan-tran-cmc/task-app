@@ -4,7 +4,6 @@
 
 1. [Demo](#demo)
 2. [Environment](#environment)
-3. [Problems Installation](#problems)
 4. [Setup and Installation](#setup-and-installation)
 5. [Run project](#run-project)
 6. [Build app](#build-app)
@@ -24,6 +23,7 @@ https://user-images.githubusercontent.com/131247282/233044888-1a3496e9-30d5-421e
 | VS Code        | 1.77.3              |
 | Android Studio | Arctic Fox 2021.3   |
 | Xcode          | 13.4.1              |
+| Fvm            | 2.4.1               |
 
 | Programming language | version |
 | -------------------- | ------- |
@@ -33,6 +33,18 @@ https://user-images.githubusercontent.com/131247282/233044888-1a3496e9-30d5-421e
 | --------- | ----------------------- |
 | Flutter   | 3.7.11 (stable release) |
 | CocoaPods | 1.11.3                  |
+
+
+## <a name="setup-and-installation">#</a> 🔧 Setup and Installation
+- Step 1: [Install fvm](https://fvm.app/docs/getting_started/installation/). Use FVM to manage the Flutter SDK version for any projects
+- Step 2: Execute `$ fvm install 3.7.11` to download the flutter SDK.
+- Step 2: Access the repository folder and execute `$ fvm use 3.7.11` to use this Flutter version for project 
+- Step 3: Execute `$ fvm flutter doctor` to verify installations
+- Step 4: Execute `$ fvm flutter pub get` to pull project dependencies
+- Step 5: Execute `$ fvm flutter packages pub run build_runner build --delete-conflicting-outputs` to generate file
+
+
+
 
 ## Screenshot
 
