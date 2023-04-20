@@ -10,7 +10,7 @@
 6. [Architecture of boilerplate](#architecture-of-boilerplate)
 7. [Folder structure](#folder-structure)
 8. [Screenshot](#screenshot)
-
+9. [Distribute](#distribute)
 ## <a name="demo">#</a> Demo 🎬
 
 
@@ -123,7 +123,7 @@ Now, lets dive into the lib folder which has the main code for the application.
 10- main_development.dart - File run when run command build with target -target or flavor development.
 ```
 
-## <a name=#screenshot>#</a> Screenshot
+## <a name="screenshot">#</a> Screenshot
 
 - **Home(task list)**
 ![simulator_screenshot_A831A715-7059-4D22-8DDE-72BF95F06D94](https://user-images.githubusercontent.com/131247282/233046920-398d9063-58de-4fe9-8cc8-a6d12c0bb385.png)
@@ -136,3 +136,6 @@ Now, lets dive into the lib folder which has the main code for the application.
 ![simulator_screenshot_DAB5C48C-74E8-4093-873D-42270A8C925A](https://user-images.githubusercontent.com/131247282/233047125-d6d6c628-0ff6-4d4c-8af7-492e6e86e574.png)
 - **Update task**
 ![simulator_screenshot_26CDA524-2A13-43A0-8457-FE3D5974A4EB](https://user-images.githubusercontent.com/131247282/233047250-a9780d5c-d3b9-4c3a-a8c1-2a7bbe9d8062.png)
+
+## <a name="ditribute">#</a>
+# Firebase distribute: [link](https://appdistribution.firebase.google.com/testerapps/1:162770905921:android:5d1556250bb10850518fc0/releases/6u9vu87dnhfoo?utm_source=firebase-console)
