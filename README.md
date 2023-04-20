@@ -1,7 +1,18 @@
 # Task App
 
+## Table of Contents
 
-## Demo
+1. [Demo](#demo)
+2. [Environment](#environment)
+3. [Problems Installation](#problems)
+4. [Setup and Installation](#setup-and-installation)
+5. [Run project](#run-project)
+6. [Build app](#build-app)
+7. [Architecture of boilerplate](#architecture-of-boilerplate)
+8. [Folder structure](#folder-structure)
+9. [Use custom setting](#use-custom-setting)
+
+## <a name="demo">#</a> Demo 🎬
 
 
 https://user-images.githubusercontent.com/131247282/233044888-1a3496e9-30d5-421e-9228-fb46eb3e702c.mp4
