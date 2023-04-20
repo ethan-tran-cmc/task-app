@@ -43,8 +43,15 @@ https://user-images.githubusercontent.com/131247282/233044888-1a3496e9-30d5-421e
 - Step 4: Execute `$ fvm flutter pub get` to pull project dependencies
 - Step 5: Execute `$ fvm flutter packages pub run build_runner build --delete-conflicting-outputs` to generate file
 
-
-
+## <a name="run-project">#</a> 🏃‍♂️ Run project
+### With fvm
+- `$ fvm flutter run --flavor development -t lib/main/main_development.dart`
+- `$ fvm flutter run --flavor staging -t lib/main/main_staging.dart`
+- `$ fvm flutter run --flavor production -t lib/main/main_production.dart`
+### Without fvm
+- `$ flutter run --flavor development -t lib/main/main_development.dart`
+- `$ flutter run --flavor staging -t lib/main/main_staging.dart`
+- `$ flutter run --flavor production -t lib/main/main_production.dart`
 
 ## Screenshot
 
