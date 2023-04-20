@@ -11,6 +11,7 @@
 7. [Folder structure](#folder-structure)
 8. [Screenshot](#screenshot)
 9. [Distribute](#distribute)
+
 ## <a name="demo">#</a> Demo 🎬
 
 
@@ -137,5 +138,5 @@ Now, lets dive into the lib folder which has the main code for the application.
 - **Update task**
 ![simulator_screenshot_26CDA524-2A13-43A0-8457-FE3D5974A4EB](https://user-images.githubusercontent.com/131247282/233047250-a9780d5c-d3b9-4c3a-a8c1-2a7bbe9d8062.png)
 
-## <a name="ditribute">#</a>
-# Firebase distribute: [link](https://appdistribution.firebase.google.com/testerapps/1:162770905921:android:5d1556250bb10850518fc0/releases/6u9vu87dnhfoo?utm_source=firebase-console)
+## <a name="distribute">#</a> Distribute
+### Firebase distribute: [link](https://appdistribution.firebase.google.com/testerapps/1:162770905921:android:5d1556250bb10850518fc0/releases/6u9vu87dnhfoo?utm_source=firebase-console)
