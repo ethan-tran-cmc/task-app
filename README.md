@@ -53,6 +53,34 @@ https://user-images.githubusercontent.com/131247282/233044888-1a3496e9-30d5-421e
 - `$ flutter run --flavor staging -t lib/main/main_staging.dart`
 - `$ flutter run --flavor production -t lib/main/main_production.dart`
 
+## <a name="build-app">#</a> 🔨 Build app
+#### Build Android:
+```
+- Build development: flutter build apk --release --flavor development -t lib/main/main_development.dart
+- Build staging: flutter build apk --release --flavor staging -t lib/main/main_staging.dart
+- Build production: flutter build apk --release --flavor production -t lib/main/main_production.dart
+```
+- The .apk file will be save at `build/app/outputs/flutter-apk/*.apk`
+#### Build IOS:
+```
+- Build development: flutter build ipa --release --flavor development -t lib/main/main_development.dart
+- Build staging: flutter build ipa --release --flavor staging -t lib/main/main_staging.dart
+- Build production: flutter build ipa --release --flavor production -t lib/main/main_production.dart
+```
+## <a name="architecture-of-boilerplate">#</a> 🙌 Architecture of boilerplate
+
+#### Boilerplate using Clean Architecture
+
+- Advantages of using this architecture
+  - Easier to modify
+  - Easier to test
+  - Easier to detect bugs & errors
+- There are three main categories in a clean architecture structure;
+  - Data ⇨ Local and / or Remote(API) data sources
+  - Domain ⇨ business logic(use cases) and business objects(entities) to modify or shape the data source
+  - Presentation ⇨ How modified data source is shown to user
+<br/>
+
 ## Screenshot
 
 - **Home(task list)**
