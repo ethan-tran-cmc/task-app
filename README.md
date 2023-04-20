@@ -17,6 +17,23 @@
 
 https://user-images.githubusercontent.com/131247282/233044888-1a3496e9-30d5-421e-9228-fb46eb3e702c.mp4
 
+## <a name="environment">#</a> Environment ⛩ 
+
+| Tool name      | version             |
+| -------------- | ------------------- |
+| VS Code        | 1.77.3              |
+| Android Studio | Arctic Fox 2021.3   |
+| Xcode          | 13.4.1              |
+
+| Programming language | version |
+| -------------------- | ------- |
+| Dart                 | 2.19.6  |
+
+| Framework | version                 |
+| --------- | ----------------------- |
+| Flutter   | 3.7.11 (stable release) |
+| CocoaPods | 1.11.3                  |
+
 ## Screenshot
 
 - **Home(task list)**
